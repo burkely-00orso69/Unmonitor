@@ -1,0 +1,17 @@
+LOG_LEVEL="INFO"
+LOG_FOLDER= ""
+
+remote_path_local=""
+remote_path_remote=""
+
+plex_host=""
+plex_api=""
+plex_server_owner=""
+
+
+sonarr_host=""
+sonarr_api=""
+
+unmonitor_shows_users = {
+	#Example ("name_of_show_in_sonarr", tuple(["User1", "User2"]), number_of_days_for_remonitor (use 0 if not using))
+}
