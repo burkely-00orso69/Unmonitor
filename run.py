@@ -3,8 +3,8 @@ from logging.handlers import RotatingFileHandler
 from plexapi.server import PlexServer
 from datetime import datetime, timedelta
 
-extra = {'folder_name': os.path.dirname(os.path.abspath(__file__)).split("/")[-1] if os.path.dirname(os.path.abspath(__file__)).split("/")[-1] != "" else "Unknown"}
-formatter = logging.Formatter('%(asctime)s - %(levelname)10s - %(folder_name)15s:%(module)15s:%(funcName)30s:%(lineno)5s - %(message)s')
+print(os.path.dirname(os.path.abspath(__file__)).split("/")[-1])
+extra = {'folder_name': os.path.dirname(os.path.abspath(__file__)).split("/")[-1]}
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 consoleHandler = logging.StreamHandler(sys.stdout)
